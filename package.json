@@ -17,8 +17,8 @@
   "scripts": {
     "postinstall": "yarn bootstrap",
     "bootstrap": "lerna bootstrap",
-    "bump": "yarn lerna-semantic-release pre && yarn lerna-semantic-release post",
-    "publish": "yarn build && yarn lerna-semantic-release perform",
+    "npm:bump": "yarn lerna-semantic-release pre && yarn lerna-semantic-release post",
+    "npm:publish": "yarn build && yarn lerna-semantic-release perform",
     "build": "lerna run build",
     "test": "lerna run test"
   },
