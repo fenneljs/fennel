@@ -1,0 +1,21 @@
+{
+  "name": "@fennel/root",
+  "version": "0.0.0",
+  "description": "Fennel is a task system for node js. Think of Celery (python) but for node.",
+  "repository": "https://github.com/fenneljs/fennel",
+  "author": "Tycho Tatitscheff",
+  "license": "MIT",
+  "workspaces": [
+    "packages/**"
+  ],
+  "private": true,
+  "devDependencies": {
+    "cz-lerna-changelog": "^2.0.2",
+    "lerna": "^3.13.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  }
+}
