@@ -10,15 +10,13 @@
   ],
   "private": true,
   "devDependencies": {
-    "cz-lerna-changelog": "^2.0.2",
-    "lerna": "^3.13.4",
-    "lerna-semantic-release": "reywright/lerna-semantic-release#7ad032a"
+    "cz-lerna-changelog": "1.2.1",
+    "lerna": "2.11.0",
+    "lerna-semantic-release": "9.1.0"
   },
   "scripts": {
     "postinstall": "yarn bootstrap",
     "bootstrap": "lerna bootstrap",
-    "postbootstrap": "cd node_modules/lerna-semantic-release && yarn install && cd ../..",
-    "lerna-semantic-release": "node_modules/lerna-semantic-release/packages/lerna-semantic-release/bin/lerna-semantic-release.js",
     "bump": "yarn lerna-semantic-release pre && yarn lerna-semantic-release post",
     "publish": "yarn build && yarn lerna-semantic-release perform",
     "build": "lerna run build",
