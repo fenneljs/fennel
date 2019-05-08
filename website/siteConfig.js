@@ -21,18 +21,12 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "Fennel", // Title for your website.
+  title: "Fennel",
   tagline: "Task system for Node done right",
-  // For github.io type URLs, you would set the url and baseUrl like:
   url: "https://fenneljs.github.io",
   baseUrl: "/",
-
-  // Used for publishing and more
   projectName: "fenneljs.github.io",
   organizationName: "fenneljs",
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [

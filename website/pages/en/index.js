@@ -39,6 +39,7 @@ class HomeSplash extends React.Component {
       <h2 className="projectTitle">
         {siteConfig.title}
         <small>{siteConfig.tagline}</small>
+        <small>🛠 This is work in progress ! Nothing to see here yet 🛠</small>
       </h2>
     );
 
@@ -60,13 +61,13 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <Logo img_src={`${baseUrl}img/logo.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl("doc1.html")}>Example Link</Button>
-            <Button href={docUrl("doc2.html")}>Example Link 2</Button>
+            <Button href="#try">Getting Started</Button>
+            <Button href={docUrl("doc1.html")}>Tutorial</Button>
+            <Button href={docUrl("doc2.html")}>Api Documentation</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -99,7 +100,13 @@ class Index extends React.Component {
         style={{ textAlign: "center" }}
       >
         <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <MarkdownBlock>
+          {`Fennel has: 
+- switchable brokers 
+- switchable storage backend 
+- test system 
+- monitoring website`}
+        </MarkdownBlock>
       </div>
     );
 
@@ -108,12 +115,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              "To make your landing page more attractive, use illustrations! Check out " +
-              "[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. " +
-              "The illustrations you see on this page are from unDraw.",
+              "To help you see what is going on, Fennel has a wonderful debugging website ",
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: "left",
-            title: "Wonderful SVG Illustrations"
+            title: "Wonderful monitoring website"
           }
         ]}
       </Block>
@@ -137,11 +142,10 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content:
-              "Each new Docusaurus project has **randomly-generated** theme colors.",
+            content: "The CLI",
             image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
             imageAlign: "right",
-            title: "Randomly Generated Theme Colors"
+            title: "A CLI to setup and monitor"
           }
         ]}
       </Block>
@@ -151,16 +155,18 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: "This is the content of my feature",
-            image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: "top",
-            title: "Feature One"
-          },
-          {
-            content: "The content of my second feature",
+            content:
+              "Fennel is backend agnostic. You can easily switch brokers and result backend without changing a single line of code",
             image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: "top",
-            title: "Feature Two"
+            title: "Backend agnostic"
+          },
+          {
+            content:
+              "Fennel is targeting modern node. You can use reflection with Typescript.",
+            image: `${baseUrl}img/undraw_operating_system.svg`,
+            imageAlign: "top",
+            title: "Modern"
           }
         ]}
       </Block>
