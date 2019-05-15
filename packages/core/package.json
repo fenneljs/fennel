@@ -1,13 +1,10 @@
 {
-  "name": "@fennel/common",
+  "name": "@fennel/core",
   "version": "0.1.0",
   "main": "dist/index.js",
-  "umd:main": "dist/fennel__common.umd.production.js",
-  "module": "dist/fennel__common.es.production.js",
+  "umd:main": "dist/core.umd.production.js",
+  "module": "dist/core.es.production.js",
   "typings": "dist/index.d.ts",
-  "publishConfig": {
-    "access": "public"
-  },
   "files": [
     "dist"
   ],
